@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+section{
+    height: 70vh;
+    background-color: #1E2431;
+}
+/* sidebar */
+aside{
+    background-color: #0D1B2A;
+    min-height: 100vh;
+}
+aside ul li{
+    padding: 20px 0px;
+}
+aside ul li a:hover{
+    background-color: #778DA9;
+    opacity: 0.2;
+    color: red;
+}
+aside ul li a{
+    display: block;
+    padding: 10px 60px;
+    color: #778DA9;
+    font-weight: bold;
+}
+aside ul li a i{
+    display: block;
+    padding-right: 20px;
+    color: #778DA9;
+}
+
+/* main-content */
+main{
+    /* background-color: #778DA9; */
+    min-height: 100vh;
+}
+.section-title h4{
+    font-weight: bold;
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+}
+.section-title h4 span{
+    color: deepskyblue;
+}
+
+/* home section */
+#home-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+#home-section h3{
+    font-weight: bold;
+    color: #fff;
+}
+#home-section h2{
+    font-weight: bold;
+    color: #fff;
+    font-size: 80px;
+}
+/* #home-section h2{
+    font-weight: bold;
+    color: #fff;
+} */
+#home-section h2 span{
+    font-weight: bold;
+    color: aqua;
+}
+#home-section p{
+    color: #fff;
+}
+#home-section #resumeBtn{
+    background-color: #01EDFF;
+    border: 1px solid #01EDFF;
+    border-radius: 50px;
+    color: #0D1B2A;
+    padding: 10px 25px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+    transition: scale 0.5s;
+}
+#home-section #resumeBtn:hover{
+    background-color: #01EDFF;
+    color: #fff;
+    scale: 1.1;
+}
+#home-section ul{
+    display: flex;
+    justify-content: center;
+}
+#home-section ul li{
+    padding-block: 20px;
+}
+#home-section ul li a{
+    display: block;
+    padding-inline: 20px;
+}
+#home-section ul li a i{
+    border: 1px solid #01EDFF;
+    border-radius: 50px;
+    line-height: 12px;
+    display: block;
+    padding: 15px 15px;
+    color: #01EDFF;
+    transition: 0.2s;
+}
+#home-section ul li a i:hover{
+    color: #fff;
+    background-color: #01EDFF;
+}
+/* #home-section p{
+    font-weight: ;
+    color: aqua;
+} */
+#about-content{
+    padding: 50px;
+    margin-top: 20px;
+    text-align: justify;
+    color: #fff;
+}
