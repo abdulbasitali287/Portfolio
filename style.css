@@ -13,12 +13,13 @@ ul{
     margin: 0;
     padding: 0;
 }
-section{
-    height: 70vh;
+/* section{
+    height: auto;
     background-color: #1E2431;
-}
+    padding-block: 40px;
+} */
 /* sidebar */
-aside{
+/* aside{
     background-color: #0D1B2A;
     min-height: 100vh;
 }
@@ -40,12 +41,11 @@ aside ul li a i{
     display: block;
     padding-right: 20px;
     color: #778DA9;
-}
+} */
 
 /* main-content */
-main{
-    /* background-color: #778DA9; */
-    min-height: 100vh;
+section{
+    background-color: #0D1B2A;
 }
 .section-title h4{
     font-weight: bold;
@@ -60,9 +60,15 @@ main{
 /* home section */
 #home-section{
     display: flex;
+    height: max-content;
+    padding-top: 200px;
+    padding-bottom: 100px;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+    background-color: #0D1B2A;
+    overflow: hidden;
 }
 #home-section h3{
     font-weight: bold;
@@ -71,12 +77,8 @@ main{
 #home-section h2{
     font-weight: bold;
     color: #fff;
-    font-size: 80px;
+    font-size: 50px;
 }
-/* #home-section h2{
-    font-weight: bold;
-    color: #fff;
-} */
 #home-section h2 span{
     font-weight: bold;
     color: aqua;
@@ -92,7 +94,7 @@ main{
     padding: 10px 25px;
     font-weight: 600;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     transition: scale 0.5s;
 }
 #home-section #resumeBtn:hover{
@@ -109,14 +111,14 @@ main{
 }
 #home-section ul li a{
     display: block;
-    padding-inline: 20px;
+    padding-inline: 10px;
 }
 #home-section ul li a i{
     border: 1px solid #01EDFF;
     border-radius: 50px;
     line-height: 12px;
     display: block;
-    padding: 15px 15px;
+    padding: 16px 15px;
     color: #01EDFF;
     transition: 0.2s;
 }
@@ -124,13 +126,217 @@ main{
     color: #fff;
     background-color: #01EDFF;
 }
-/* #home-section p{
-    font-weight: ;
+#home-section p{
     color: aqua;
-} */
-#about-content{
+}
+/* #about-content{
     padding: 50px;
     margin-top: 20px;
     text-align: justify;
     color: #fff;
+} */
+/* services section start */
+.section-title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0078FF;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+#service-section{
+    background-color: #0D1B2A;
+}
+#service-section .card{
+    border: none;
+    border-radius: 15px;
+    background-color: #0A2647;
+    padding-block: 30px;
+    box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.5s;
+}
+#service-section .card:hover{
+    transform: translateY(-15px);
+}
+#service-section .icon-div{
+    /* background-color: ; */
+    padding-inline: 35px;
+    padding-block: 30px;
+    display: inline-block;
+    border: 10px solid #0078FF;
+    border-radius: 150px;
+    margin-bottom: 10px;
+    transition: border-color,background-color 0.5s;
+}
+#service-section .card:hover .icon-div{
+    border-color: #205295;
+    background-color: #0078FF;
+}
+#service-section .card:hover .icon-div i{
+    color: #fff;
+}
+#service-section .icon-div i{
+    font-size: 30px;
+    color: #fff;
+}
+#service-section .card-body{
+    text-align: center;
+}
+#service-section .card-body .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+#service-section .card-body .card-text{
+    padding-inline: 15px;
+    text-align: justify;
+    color: #fff;
+}
+#portfolio-section{
+    background-color: #0D1B2A;
+}
+#portfolio-section .card{
+    transition: transform 0.5s;
+}
+#portfolio-section .card:hover{
+    transform: translateY(-15px);
+}
+#portfolio-section .card .card-img{
+    overflow: hidden;
+}
+#portfolio-section .card .card-img img{
+    transition: transform 1s;
+}
+#portfolio-section .card .card-img img:hover{
+    transform: scale(1.5);
+}
+footer{
+    padding-block: 25px;
+    background-color: #0D1B2A;
+    text-align: center;
+}
+footer p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-weight: 500;
+}
+
+nav{
+    background-color: #0D1B2A;
+}
+nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 25px;
+}
+nav ul li a{
+    color: #01EDFF;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+nav ul li a:hover{
+    border-bottom: 3px solid #01EDFF;
+    padding-bottom: 4px;
+    color: #01EDFF;   
+}
+#about-section #about-content{
+    padding-top: 100px;
+}
+#about-section #about-content h1{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+#about-section #about-content h1::after{
+    content: "";
+    display: block;
+    width: 6rem;
+    height: 4px;
+    background-color: #0078FF;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#about-section #about-content p{
+    color: #fff;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 30px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    text-align: justify;
+}
+
+/* skills section */
+#skills-container{
+    /* padding-inline: 10px; */
+}
+#skills-container .skills-box{
+    padding-block: 15px;
+    /* border: 1px solid green; */
+}
+#skills-container .skills-box h2{
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+}
+#skills-container .skills-box .progress .progress-bar{
+    background-color: #0A2647;
+}
+/* contact section */
+#contact-section form .form-group{
+    padding: 10px;
+}
+#contact-section form .form-group input{
+    display: block;
+    width: 100%;
+    border: 1px solid cadetblue;
+    background: none;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+::placeholder{
+    color: white;
+    font-size: 14px;
+    padding-inline-start: 10px;
+}
+#contact-section .form-group input[type=text]:focus{
+    color: #fff;
+    outline: none;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-end-start-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #0078FF;
+}
+#contact-section form .form-group textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid cadetblue;
+    background: none;
+    padding: 10px;
+    transition: all 0.5s;
+}
+#contact-section form .form-group textarea:focus{
+    color: #fff;
+    outline: none;
+    /* border-top: none; */
+    border-right: none;
+    border-left: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-end-start-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-color: #0078FF;
 }
