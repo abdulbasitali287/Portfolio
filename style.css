@@ -13,36 +13,6 @@ ul{
     margin: 0;
     padding: 0;
 }
-/* section{
-    height: auto;
-    background-color: #1E2431;
-    padding-block: 40px;
-} */
-/* sidebar */
-/* aside{
-    background-color: #0D1B2A;
-    min-height: 100vh;
-}
-aside ul li{
-    padding: 20px 0px;
-}
-aside ul li a:hover{
-    background-color: #778DA9;
-    opacity: 0.2;
-    color: red;
-}
-aside ul li a{
-    display: block;
-    padding: 10px 60px;
-    color: #778DA9;
-    font-weight: bold;
-}
-aside ul li a i{
-    display: block;
-    padding-right: 20px;
-    color: #778DA9;
-} */
-
 /* main-content */
 section{
     background-color: #0D1B2A;
@@ -56,7 +26,22 @@ section{
 .section-title h4 span{
     color: deepskyblue;
 }
-
+.section-title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 50px;
+    text-align: center;
+}
+.section-title::after{
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #0078FF;
+    margin: auto;
+    margin-top: 15px;
+    border-radius: 20px;
+}
 /* home section */
 #home-section{
     display: flex;
@@ -129,29 +114,7 @@ section{
 #home-section p{
     color: aqua;
 }
-/* #about-content{
-    padding: 50px;
-    margin-top: 20px;
-    text-align: justify;
-    color: #fff;
-} */
 /* services section start */
-.section-title{
-    color: #fff;
-    font-weight: bold;
-    font-size: 50px;
-    text-align: center;
-}
-.section-title::after{
-    content: "";
-    display: block;
-    width: 80px;
-    height: 4px;
-    background-color: #0078FF;
-    margin: auto;
-    margin-top: 15px;
-    border-radius: 20px;
-}
 #service-section{
     background-color: #0D1B2A;
 }
@@ -167,7 +130,6 @@ section{
     transform: translateY(-15px);
 }
 #service-section .icon-div{
-    /* background-color: ; */
     padding-inline: 35px;
     padding-block: 30px;
     display: inline-block;
@@ -200,54 +162,48 @@ section{
     text-align: justify;
     color: #fff;
 }
-#portfolio-section{
-    background-color: #0D1B2A;
-}
-#portfolio-section .card{
-    transition: transform 0.5s;
-}
-#portfolio-section .card:hover{
-    transform: translateY(-15px);
-}
-#portfolio-section .card .card-img{
-    overflow: hidden;
-}
-#portfolio-section .card .card-img img{
-    transition: transform 1s;
-}
-#portfolio-section .card .card-img img:hover{
-    transform: scale(1.5);
-}
-footer{
-    padding-block: 25px;
-    background-color: #0D1B2A;
-    text-align: center;
-}
-footer p{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #fff;
-    font-weight: 500;
-}
-
+/* navbar */
 nav{
     background-color: #0D1B2A;
+
 }
-nav ul{
-    display: flex;
+nav #nav-ul-1{
     justify-content: space-evenly;
     padding: 25px;
 }
-nav ul li a{
+nav #nav-ul-1 li a{
     color: #01EDFF;
     font-size: 14px;
     font-weight: bold;
     transition: all 0.2s;
 }
-nav ul li a:hover{
+nav #nav-ul-1 li a:hover{
     border-bottom: 3px solid #01EDFF;
     padding-bottom: 4px;
     color: #01EDFF;   
 }
+nav #nav-2{
+    background-color: #0A2647;
+    margin: 20px auto 20px auto;
+    width: 40%;
+    border-radius: 10px;
+}
+nav #nav-ul-2{
+    justify-content: space-evenly;
+    padding: 25px;
+}
+nav #nav-ul-2 li a{
+    color: #01EDFF;
+    font-size: 14px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+nav #nav-ul-2 li a:hover{
+    border-bottom: 3px solid #01EDFF;
+    padding-bottom: 4px;
+    color: #01EDFF;   
+}
+/* about section */
 #about-section #about-content{
     padding-top: 100px;
 }
@@ -273,7 +229,6 @@ nav ul li a:hover{
     word-spacing: 2px;
     text-align: justify;
 }
-
 /* skills section */
 #skills-container{
     /* padding-inline: 10px; */
@@ -339,4 +294,15 @@ nav ul li a:hover{
     border-end-start-radius: 20px;
     border-bottom-right-radius: 20px;
     border-color: #0078FF;
+}
+/* footer */
+footer{
+    padding-block: 25px;
+    background-color: #0D1B2A;
+    text-align: center;
+}
+footer p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fff;
+    font-weight: 500;
 }
